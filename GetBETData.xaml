@@ -1,0 +1,134 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="GetBVBData" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="762.4,872.8" sap2010:WorkflowViewState.IdRef="GetBVBData_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>MongoDBCollectionToDataTable</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>MongoDB.Bson</x:String>
+      <x:String>MongoDB.Driver</x:String>
+      <x:String>MongoDB.Driver.Core</x:String>
+      <x:String>MongoDB.Libmongocrypt</x:String>
+      <x:String>UiPath.Python</x:String>
+      <x:String>UiPath.Python.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>MongoDBCollectionToDataTable</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>MongoDB.Bson</AssemblyReference>
+      <AssemblyReference>MongoDB.Driver.Core</AssemblyReference>
+      <AssemblyReference>MongoDB.Driver.Legacy</AssemblyReference>
+      <AssemblyReference>MongoDB.Driver</AssemblyReference>
+      <AssemblyReference>MongoDB.Libmongocrypt</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="GetBETData" sap:VirtualizedContainerService.HintSize="475.2,808" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Name="OutMsg" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="433.6,468.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="a926f3e6-23b4-4a08-880a-1f02c60628e5" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,252" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Symbol' ReferenceIdx='0' Name='Symbol'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Symbol Url' ReferenceIdx='1' Name='Symbol Url'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Company' ReferenceIdx='2' Name='Company'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Shares' ReferenceIdx='3' Name='Shares'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Ref. price' ReferenceIdx='4' Name='Ref. price'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='FF' ReferenceIdx='5' Name='FF'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='FR' ReferenceIdx='6' Name='FR'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='FC' ReferenceIdx='7' Name='FC'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Weight (%)' ReferenceIdx='8' Name='Weight (%)'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Symbol' attr='text' name2='Symbol Url' attr2='href' /&gt;&lt;column name='Company' attr='text' /&gt;&lt;column name='Shares' attr='text' /&gt;&lt;column name='Ref. price' attr='text' /&gt;&lt;column name='FF' attr='text' /&gt;&lt;column name='FR' attr='text' /&gt;&lt;column name='FC' attr='text' /&gt;&lt;column name='Weight (%)' attr='text' /&gt;&lt;/extract-table&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="0" Version="V1">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://bvb.ro/FinancialInstruments/Indices/IndicesProfiles" DesignTimeRectangle="1519, 782, 58, 36" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl id='gvC_next' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='gvC_next' tag='A' type='' class='paginate_button next' aaname='Next' check:innerText='Next' /&gt;" Guid="052bd071-a8cf-490d-9c1a-129952376af8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD4AAAAoCAYAAACmTknCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKMSURBVGhD7ZWxa9tAFMb1X9wYyJChUEMHaxR48Wi8GDxpCaZDEYZguhRTCCJDMRlsuilDQZs6BJShoAwBdVKGgDwEPGS4wa2GDvoLvr6T5Vg2tzhWsatc4IPc+96d73fv7klL0xSvSfNfvyH+FPhrkQKXmVWWApeZVZYCl5lVlgKXmVWWApeZVZYCl5lVVmng/N6Hf+Mjetr0OCKKh4/JRny/Kg08+KRB00htB7M1L8CQ4sY4LsR20QzeBwPm1W7rlQ9O6n0vVrd8cKe9+3olg5uw+jVobIjg2ZOAPwUYnbZgvGE4qlP1zgPw3Jt968FomHAelvMp5oqYBTf0YDV0HIkDPtYpZsC+XeVto5LBLfhTDz2moXYR5t4G+NyHRb5+5iKacXDKH9Q1sL6PJMuP4XQZtMYIkRhPHXQYQ2ccIUlmCG9GMMV6H92sp7y0d5QPnqSIx03638Akq9o6ePyVvLcDBPPV3OTaKuSTHl2CpTlfvOwQWNdBnOeW9XT+CXiahrCpiotGV9woh3dK8RMLE6qWqFimS5PmarCuV9UTh8EoptUH8Ne+FAcNThu/HaKWwfiFjc7gdimvMYBbBM9VvLbJ3RC6AGe0ZuF2HDx4mibw+/RW39WyA1huNLyg5ndiIyzMFbnJn8J4TnB0Y/QzO3v/2nsvf/9CBw9Oyt+quMbPG32YoEnj5mWU53Gaq9OVpsPI4PMDa1NzE5X+aWeVN12e5/8P4KRFo1vfKP9ho3VM+dStxTtmBr35uwVYfNUBYx1M7pfXPkH4mQ5Ga8GZFsfi9woNcUuVBr69EnBOnzP+ss/Rrtoj+H6lwGVmlaXAZWaVpcBlZpWlwGVmlaXAZWaVpcBlZpW1AAf+Ap7X42Qo5SmoAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BVB - Indices profiles' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="604, 417, 973, 361" FriendlyName="'SymbolCompanySharesRef.…'" FullSelectorArgument="&lt;webctrl id='gvC' tag='TABLE' /&gt;" Guid="f5c0ff84-f7c4-4c49-b892-b02b783761df" InformativeScreenshot="30a852bce4b14fdfecc4b0ca093f8220.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BVB - Indices profiles' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAI3SURBVDhPfVM5aBVRFE1cC9cUimsjCmJnQAVBEWwEsRERCxUlha2QNmChjdaxEbRTrGLI8l1i1G8w/ERj1JjvAv5Eg5oFnX37sxzPnT9/MuN2YGDmvTvnnXPufQ1IMGWHOPTMwIaChhNDFiasMNkBND9C65iNzXc17HpsYPCHn+wAKQFrcGPSw4I7ClZ3q2j/5MElR8j17u9VbLmvobFDwfk3NkwpTpASCNRqhAMDRly4s1/HuBbgmxPhWMnCIhJvooJKRpkgRyComCH2FQ00kGTbAw2HB834fSOtDf8Mkqp5/EFwe6oaWxArF8oObvF7ZZeKpZ0q2vj9O3IEGi00U7pY2P/UQFkPMO1GODtixYTrqOKt9g8LEXO5/MHF4k4Fa3tVXJ/w4LE24HrfTBU7+mohnnlh/T3E/lk/bpOEdW7UgpEpkk5c+ehiBa2IvasVF/XdlEDkt1CqnLKdpz2c8dMikX1wwMRCkkvAk5lO5DIo6yHW9GqxjdOUOkv/IvfiOxfLebqs93AmRFEdOQLxe+m9E9tootSbXzyU2LqtHCJp5fEhE5YUZZAjELxUgnjq5AeZgbZxB40kXEYFHV/nR7iOHIFwt4zYlKpifUHFvekqXnMad3P+hWRvUf+/guKcj1WULl5bxxwoDFbuQztTb+pRsYTrckeyFCnBHAM7koztnic6hmmlnvVn3tSjpVoXmh/peMW9OlKCUTVg/20GZeEah8jJjL2o7mL6J59bOMWnQGs1FcAvOgCFVzmg7goAAAAASUVORK5CYII=" InformativeScreenshot="d464fc8796cb566f1fe1de4c1a3427e9.png" Selector="&lt;html app='msedge.exe' title='BVB - Indices profiles' /&gt;" Url="https://bvb.ro/FinancialInstruments/Indices/IndicesProfiles" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:OutputDataTable DataTable="[ExtractDataTable]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[OutMsg]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="433.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[OutMsg]" />
+  </Sequence>
+</Activity>
